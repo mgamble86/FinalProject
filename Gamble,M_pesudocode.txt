@@ -1,0 +1,31 @@
+#this code will import fish abundance data, separate it by species, time and age group, then export the data to a .csv file in order to be analyzed and graphed using R
+
+#import fish data
+	# Fish = stored fish abundance data in simple text
+	
+#separate data by species
+	# emordax = northern anchovy data
+	# ssagax = sardine data
+	# fish3 = additional species data (dependent upon avalability)
+	
+#separate species data by month/year
+	# emordax1 = Jan anchovy data, emordax2 = Feb anchovy data, etc...
+	# ssagax1 = Jan sardine data, ssagax2 = Feb sardine data, etc...
+	# fish31 = Jan species3 data, fish32 = Feb species 3 data, etc...
+	
+#separate species data by age group
+	# em1lar = larval anchovy data for Jan, (repeat for all 12 months)
+	# ss1lar = larval sardine data for Jan, (repeat for all 12 months)
+	# f31lar = larval species3 data for Jan, (repeat for all 12 months)
+#this data can be used independently to analyze population recruitment and in combination with 	
+	sea lion blubber/disease data
+	
+#def ageclass = all species data combined into age class groups
+	#this data can be used to compare sea lion data with overall food abundance availability
+
+#def ageclassEN/ageclassLN = age class events data specific to El Nino or La Nina
+
+# data.csv = table of all pruned and sorted fish abundance data exported into .csv format for analysis
+
+# compare fish abundance data and sea lion data in order to look for correlations using R analysis
+
