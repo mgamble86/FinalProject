@@ -1,0 +1,2 @@
+#curls all the Caligus sp. dna code from NCBI
+curl 'http://www.ncbi.nlm.nih.gov/nuccore/[556089405-556089473:2]?report=fasta' > Caligus.html
