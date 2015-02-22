@@ -1,31 +1,24 @@
-#this code will import fish abundance data, separate it by species, time and age group, then export the data to a .csv file in order to be analyzed and graphed using R
+# Webscrape data from NCBI
+	# Caligus.html = scraped webpages from NCBI for Caligus genus
+	# name = species names sections from Caligus.html file
+	# dna = DNA code sections from Caligus.html file
 
-#import fish data
-	# Fish = stored fish abundance data in simple text
-	
-#separate data by species
-	# emordax = northern anchovy data
-	# ssagax = sardine data
-	# fish3 = additional species data (dependent upon avalability)
-	
-#separate species data by month/year
-	# emordax1 = Jan anchovy data, emordax2 = Feb anchovy data, etc...
-	# ssagax1 = Jan sardine data, ssagax2 = Feb sardine data, etc...
-	# fish31 = Jan species3 data, fish32 = Feb species 3 data, etc...
-	
-#separate species data by age group
-	# em1lar = larval anchovy data for Jan, (repeat for all 12 months)
-	# ss1lar = larval sardine data for Jan, (repeat for all 12 months)
-	# f31lar = larval species3 data for Jan, (repeat for all 12 months)
-#this data can be used independently to analyze population recruitment and in combination with 	
-	sea lion blubber/disease data
-	
-#def ageclass = all species data combined into age class groups
-	#this data can be used to compare sea lion data with overall food abundance availability
+# strip excess characters from text
+	# names_strip = isolated species names from name file
+	# dna_strip = isolated dna code from dna file
+		# dna_codes = align all lines of dna code for each individual species
+		# onto a single text line for comparison 
 
-#def ageclassEN/ageclassLN = age class events data specific to El Nino or La Nina
+# data.nex = create .nex file for species names and DNA sequence data
+	# code to import names_strip and dna_codes data into .nex file
 
-# data.csv = table of all pruned and sorted fish abundance data exported into .csv format for analysis
+# Align DNA sequences for analysis
 
-# compare fish abundance data and sea lion data in order to look for correlations using R analysis
+# Analyze DNA sequences
+	# add sumt command code to data.nex and save as new file
+		# export sumt data to R (or other program)
+	# possibly add sump command code to data.nex if needed and save
+	# as new file
+		# export sump data to R (or other program)
 
+# construct phylo tree in R (or possibly other program
